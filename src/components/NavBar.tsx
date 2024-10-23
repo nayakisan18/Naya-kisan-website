@@ -21,12 +21,12 @@ const NavBar: FunctionComponent<NavBarType> = ({ className = "" }) => {
           </Link>
         </div>
       </div>
-      <Link
+      {/* <Link
         to="/about-us"
         className="[text-decoration:none] relative font-semibold text-[inherit] inline-block min-w-[85px]"
       >
         About Us
-      </Link>
+      </Link> */}
       <Link
         to="/contact-us"
         className="[text-decoration:none] relative font-semibold text-[inherit] inline-block min-w-[109px] whitespace-nowrap"

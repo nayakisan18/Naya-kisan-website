@@ -15,7 +15,7 @@ const SmartRecommendations: FunctionComponent<SmartRecommendationsType> = ({
       className={`w-[1067px] flex flex-col items-start justify-start gap-[41px] max-w-full text-center text-31xl text-khaki-100 font-roboto mq750:gap-5 ${className}`}
     >
       <div className="self-stretch flex flex-col items-start justify-start gap-11 mq750:gap-[22px]">
-        <h1 className="m-0 self-stretch h-[57px] relative text-inherit leading-[28.8px] font-semibold font-[inherit] flex items-center justify-center shrink-0 mq450:text-11xl mq450:leading-[17px] mq1050:text-21xl mq1050:leading-[23px]">
+        <h1 className="m-0 self-stretch h-[57px] relative text-inherit leading-[28.8px] font-semibold flex items-center justify-center shrink-0 mq450:text-11xl mq450:leading-[17px] mq1050:text-21xl mq1050:leading-[23px]">
           Smart Recommendations for Farmers
         </h1>
         <div className="self-stretch flex flex-row items-start justify-center py-0 px-5">

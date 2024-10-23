@@ -4,6 +4,9 @@ export type AgricultureFeatureType = {
   className?: string;
 };
 
+// Import the image from the assets folder
+import clipPathGroup3 from "../assets/clip-path-group-3@2x.png";
+
 const AgricultureFeature: FunctionComponent<AgricultureFeatureType> = ({
   className = "",
 }) => {
@@ -94,8 +97,8 @@ const AgricultureFeature: FunctionComponent<AgricultureFeatureType> = ({
               <div className="absolute top-[275px] left-[0px] rounded-[50%] bg-gray w-[519px] h-[19px]" />
               <img
                 className="absolute top-[0px] left-[13px] w-[480px] h-[282px] object-cover z-[1]"
-                alt=""
-                src="/clip-path-group-3@2x.png"
+                alt="clip path group"
+                src={clipPathGroup3}
               />
             </div>
           </div>

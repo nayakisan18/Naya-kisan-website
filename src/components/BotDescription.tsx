@@ -4,6 +4,10 @@ export type BotDescriptionType = {
   className?: string;
 };
 
+// Import the images from the assets folder
+import frame4Image from "../assets/frame-4-1@2x.png";
+import clipPathGroupImage from "../assets/clip-path-group@2x.png";
+
 const BotDescription: FunctionComponent<BotDescriptionType> = ({
   className = "",
 }) => {
@@ -17,15 +21,15 @@ const BotDescription: FunctionComponent<BotDescriptionType> = ({
           <div className="self-stretch flex flex-col items-start justify-start gap-[22px] max-w-full text-lg font-poppins">
             <div className="self-stretch relative leading-[28.8px] shrink-0">
               Naya kisan bot is a personal AI Farm Advisor for farmers and
-              gardeners that help them in making more informed and data-backed
-              decisions as well as update them with latest farming practices and
-              bridge the gap between farmer and technology.
+              gardeners that helps them in making more informed and data-backed
+              decisions, as well as keeps them updated with the latest farming practices and
+              bridges the gap between farmer and technology.
             </div>
             <div className="self-stretch flex flex-row items-start justify-end py-0 px-14 box-border max-w-full mq750:pl-7 mq750:pr-7 mq750:box-border">
               <img
                 className="h-[495.6px] w-[377px] relative overflow-hidden shrink-0 object-cover max-w-full"
-                alt=""
-                src="/frame-4-1@2x.png"
+                alt="frame"
+                src={frame4Image}
               />
             </div>
           </div>
@@ -35,8 +39,8 @@ const BotDescription: FunctionComponent<BotDescriptionType> = ({
         <img
           className="self-stretch h-[352px] relative max-w-full overflow-hidden shrink-0 object-cover"
           loading="lazy"
-          alt=""
-          src="/clip-path-group@2x.png"
+          alt="clip path group"
+          src={clipPathGroupImage}
         />
         <div className="w-[514px] flex flex-row items-start justify-start py-0 px-[5px] box-border max-w-full">
           <div className="flex-1 flex flex-col items-start justify-start gap-[68px] max-w-full mq450:gap-[17px] mq750:gap-[34px]">

@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import NavBar from "./NavBar";
+import logoImg from "../assets/logo@2x.png"; // Updated image import
 
 export type MainType = {
   className?: string;
@@ -14,8 +15,8 @@ const Main: FunctionComponent<MainType> = ({ className = "" }) => {
         <img
           className="h-[120px] w-[123.8px] relative object-cover"
           loading="lazy"
-          alt=""
-          src="/logo@2x.png"
+          alt="Naya Kisan Logo"
+          src={logoImg} // Updated image source
         />
         <div className="w-[556px] flex flex-col items-start justify-start pt-7 px-0 pb-0 box-border max-w-full mq750:w-0">
           <NavBar />

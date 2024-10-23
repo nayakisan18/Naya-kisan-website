@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
+import groupImg from "../assets/group.png"; // Updated image import
 
 export type FrameComponent15Type = {
   className?: string;
@@ -10,9 +11,11 @@ const FrameComponent15: FunctionComponent<FrameComponent15Type> = ({
 }) => {
   return (
     <Button
-      href="#join-section" // Add anchor link to the join section
+      href="#join-section" // Anchor link to the join section
       className={`w-52 h-[50px] z-[1] ${className}`}
-      endIcon={<img width="30px" height="30px" src="/group.png" />}
+      endIcon={
+        <img width="30px" height="30px" alt="Chat Icon" src={groupImg} />
+      } // Updated image source
       disableElevation
       variant="outlined"
       sx={{

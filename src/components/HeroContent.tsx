@@ -1,6 +1,7 @@
 import { FunctionComponent, useCallback } from "react";
 import { Button } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
+import logoImg from "../assets/logo@2x.png"; // Updated image import
 
 export type HeroContentType = {
   className?: string;
@@ -24,7 +25,7 @@ const HeroContent: FunctionComponent<HeroContentType> = ({
           className="h-[120px] w-[123.8px] relative object-cover z-[1]"
           loading="lazy"
           alt="Naya Kisan Logo"
-          src="/logo@2x.png"
+          src={logoImg} // Updated image source
         />
       </Link>
       <div className="h-[89px] w-[556px] flex flex-col items-start justify-start pt-[25px] px-0 pb-0 box-border max-w-full mq750:w-0">
@@ -38,14 +39,14 @@ const HeroContent: FunctionComponent<HeroContentType> = ({
               Home
             </Link>
           </div>
-          <div className="flex flex-col items-start justify-start pt-[13px] pb-0 pl-0 pr-2.5">
+          {/* <div className="flex flex-col items-start justify-start pt-[13px] pb-0 pl-0 pr-2.5">
             <Link
               to="/about-us"
               className="[text-decoration:none] relative font-semibold text-[inherit] inline-block min-w-[85px] z-[1]"
             >
               About Us
             </Link>
-          </div>
+          </div> */}
           <div className="flex flex-col items-start justify-start pt-[13px] px-0 pb-0">
             <Link
               to="/contact-us"

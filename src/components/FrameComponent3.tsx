@@ -1,5 +1,8 @@
 import { FunctionComponent } from "react";
 
+import vector310Img from "../assets/vector-310.svg";
+import group11Img from "../assets/group-11@2x.png";
+
 export type FrameComponent3Type = {
   className?: string;
 };
@@ -19,7 +22,7 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
               <img
                 className="self-stretch h-[38px] relative max-w-full overflow-hidden shrink-0 z-[1]"
                 alt=""
-                src="/vector-310.svg"
+                src={vector310Img}
               />
             </div>
             <h1 className="m-0 relative text-inherit leading-[29px] font-semibold font-[inherit] z-[1] mq450:text-11xl mq450:leading-[17px] mq1050:text-21xl mq1050:leading-[23px]">
@@ -37,7 +40,7 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
               <img
                 className="w-[50px] h-[50px] relative object-cover z-[1]"
                 alt=""
-                src="/group-11@2x.png"
+                src={group11Img}
               />
             </div>
             <h1 className="m-0 flex-1 relative text-inherit leading-[29px] font-semibold font-[inherit] inline-block min-w-[122px] z-[1] mq450:text-11xl mq450:leading-[17px] mq1050:text-21xl mq1050:leading-[23px]">

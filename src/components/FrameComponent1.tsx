@@ -2,6 +2,9 @@ import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 import FrameComponent10 from "./FrameComponent10";
 
+// Importing the image from the assets folder
+import clipPathGroupImg from "../assets/clip-path-group-2@2x.png";
+
 export type FrameComponent1Type = {
   className?: string;
 };
@@ -30,8 +33,8 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
               <div className="flex-1 flex flex-row items-start justify-start relative max-w-full">
                 <img
                   className="h-[63.8px] w-[68px] absolute !m-[0] top-[-45px] left-[-6.6px] object-contain"
-                  alt=""
-                  src="/clip-path-group-2@2x.png"
+                  alt="Clip Path Group"
+                  src={clipPathGroupImg}
                 />
                 <Button
                   className="h-20 flex-1 max-w-full z-[1] mq450:pl-5 mq450:pr-5 mq450:box-border"
@@ -45,6 +48,9 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
                     borderRadius: "10px",
                     "&:hover": { background: "#f2dd82" },
                     height: 80,
+                  }}
+                  onClick={() => {
+                    window.open("https://wa.me/8380074040", "_blank");
                   }}
                 >
                   Join Now

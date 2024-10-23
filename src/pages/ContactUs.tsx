@@ -1,13 +1,16 @@
 import { FunctionComponent } from "react";
-import {
-  Button,
-  TextField,
-  InputAdornment,
-  Icon,
-  IconButton,
-} from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import FrameComponent from "../components/FrameComponent";
 import Footer from "../components/Footer";
+
+// Import images from the assets folder
+import headerImage from "../assets/header.svg";
+import groupImage from "../assets/group.svg";
+import group83Image from "../assets/group-83.svg";
+import vector1Image from "../assets/vector-1.svg";
+import vector2 from "../assets/vector-2.svg";
+import vector8 from "../assets/vector-8.svg";
+import vector11 from "../assets/vector-11.svg";
 
 const ContactUs: FunctionComponent = () => {
   return (
@@ -47,25 +50,25 @@ const ContactUs: FunctionComponent = () => {
                 <div className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
                   <img
                     className="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
-                    alt=""
-                    src="/header.svg"
+                    alt="header"
+                    src={headerImage}
                   />
                   <img
                     className="absolute top-[108px] left-[42px] w-[22.2px] h-[21px] z-[1]"
                     loading="lazy"
-                    alt=""
-                    src="/group.svg"
+                    alt="group"
+                    src={groupImage}
                   />
                   <img
                     className="absolute top-[164px] left-[42px] w-[27px] h-5 z-[1]"
                     loading="lazy"
-                    alt=""
-                    src="/group-83.svg"
+                    alt="group 83"
+                    src={group83Image}
                   />
                   <img
                     className="absolute top-[214px] left-[42px] w-[18px] h-[21px] z-[1]"
-                    alt=""
-                    src="/vector-1.svg"
+                    alt="vector"
+                    src={vector1Image}
                   />
                 </div>
               </div>
@@ -92,7 +95,7 @@ const ContactUs: FunctionComponent = () => {
                         color: "rgba(242, 221, 130, 0.6)",
                       },
                     }}
-                  />                   
+                  />
                   <TextField
                     className="[border:none] h-[50px] flex-1 min-w-[130px] z-[1]"
                     placeholder="Last Name"
@@ -159,24 +162,24 @@ const ContactUs: FunctionComponent = () => {
                   }}
                 />
                 <div className="self-stretch flex flex-col items-start justify-start gap-6 max-w-full">
-                <TextField
-                  className="[border:none] bg-[transparent] self-stretch font-poppins font-medium text-base text-khaki-400 z-[1]"
-                  placeholder="How Can We Help"
-                  variant="outlined"
-                  multiline // Enables multiline input
-                  rows={4} // Sets the number of visible rows
-                  sx={{
-                    "& fieldset": { border: "none" },
-                    "& .MuiInputBase-root": {
-                      backgroundColor: "#21673c",
-                      borderRadius: "20px",
-                    },
-                    "& .MuiInputBase-input": {
-                      color: "rgba(242, 221, 130, 0.6)",
-                      whiteSpace: "pre-wrap", // Ensures that the text wraps correctly
-                    },
-                  }}
-                />
+                  <TextField
+                    className="[border:none] bg-[transparent] self-stretch font-poppins font-medium text-base text-khaki-400 z-[1]"
+                    placeholder="How Can We Help"
+                    variant="outlined"
+                    multiline // Enables multiline input
+                    rows={4} // Sets the number of visible rows
+                    sx={{
+                      "& fieldset": { border: "none" },
+                      "& .MuiInputBase-root": {
+                        backgroundColor: "#21673c",
+                        borderRadius: "20px",
+                      },
+                      "& .MuiInputBase-input": {
+                        color: "rgba(242, 221, 130, 0.6)",
+                        whiteSpace: "pre-wrap", // Ensures that the text wraps correctly
+                      },
+                    }}
+                  />
                   <Button
                     className="w-[168px] h-[50px] z-[1]"
                     disableElevation
@@ -201,9 +204,9 @@ const ContactUs: FunctionComponent = () => {
           </div>
         </section>
         <Footer
-          vector="/vector-2.svg"
-          socialIcon3="/vector-8.svg"
-          socialIcon6="/vector-11.svg"
+          vector={vector2}
+          socialIcon3={vector8}
+          socialIcon6={vector11}
           propTextDecoration="none"
         />
       </main>

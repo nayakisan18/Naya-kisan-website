@@ -4,6 +4,11 @@ export type FeaturesType = {
   className?: string;
 };
 
+// Import images from the assets folder
+import whatsappImage1 from "../assets/whatsapp-image-20240819-at-22559-pm-1@2x.png";
+import whatsappImage2 from "../assets/whatsapp-image-20240819-at-22558-pm-1@2x.png";
+import whatsappImage3 from "../assets/whatsapp-image-20240819-at-22558-pm-2-1@2x.png";
+
 const Features: FunctionComponent<FeaturesType> = ({ className = "" }) => {
   return (
     <section
@@ -67,8 +72,8 @@ const Features: FunctionComponent<FeaturesType> = ({ className = "" }) => {
                           <img
                             className="absolute top-[0px] left-[13px] rounded-3xs w-[404px] h-[260px] object-cover z-[1]"
                             loading="lazy"
-                            alt=""
-                            src="/whatsapp-image-20240819-at-22559-pm-1@2x.png"
+                            alt="whatsapp image 1"
+                            src={whatsappImage1}
                           />
                         </div>
                       </div>
@@ -150,13 +155,6 @@ const Features: FunctionComponent<FeaturesType> = ({ className = "" }) => {
                           Guidance on scheduling farming activities like sowing,
                           irrigation, fertilization, and harvesting based on
                           weather forecasts.
-                        </span>
-                      </p>
-                      <p className="m-0">
-                        <b className="text-xl font-poppins">{`Seasonal Trends: `}</b>
-                        <span className="font-semibold">
-                          Long-term weather patterns and predictions to help
-                          with strategic planning.
                         </span>
                       </p>
                     </span>
@@ -261,8 +259,8 @@ const Features: FunctionComponent<FeaturesType> = ({ className = "" }) => {
             <img
               className="absolute w-[calc(100%_-_19px)] top-[0px] right-[11px] left-[8px] rounded-3xs max-w-full overflow-hidden h-[258px] object-cover z-[1]"
               loading="lazy"
-              alt=""
-              src="/whatsapp-image-20240819-at-22558-pm-1@2x.png"
+              alt="whatsapp image 2"
+              src={whatsappImage2}
             />
           </div>
         </div>
@@ -270,8 +268,8 @@ const Features: FunctionComponent<FeaturesType> = ({ className = "" }) => {
       <img
         className="w-[390px] h-[232px] absolute !m-[0] bottom-[-55px] left-[58px] rounded-8xs object-cover z-[1]"
         loading="lazy"
-        alt=""
-        src="/whatsapp-image-20240819-at-22558-pm-2-1@2x.png"
+        alt="whatsapp image 3"
+        src={whatsappImage3}
       />
     </section>
   );

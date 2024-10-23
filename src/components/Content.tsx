@@ -5,6 +5,9 @@ export type ContentType = {
   className?: string;
 };
 
+// Import the image from the assets folder
+import img2x from "../assets/img@2x.png";
+
 const Content: FunctionComponent<ContentType> = ({ className = "" }) => {
   return (
     <section
@@ -13,8 +16,8 @@ const Content: FunctionComponent<ContentType> = ({ className = "" }) => {
       <div className="flex-1 flex flex-col items-start justify-start py-[65.2px] pl-[57px] pr-5 box-border relative gap-5 max-w-full shrink-0 mq750:pl-7 mq750:pt-[42px] mq750:pb-[42px] mq750:box-border">
         <img
           className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full object-cover"
-          alt=""
-          src="/img@2x.png"
+          alt="img"
+          src={img2x}
         />
         <div className="flex flex-row items-start justify-start pt-0 px-0 pb-1.5 box-border max-w-full">
           <h1 className="m-0 relative text-inherit leading-[29px] font-semibold font-[inherit] z-[1] mq450:text-11xl mq450:leading-[17px] mq1050:text-21xl mq1050:leading-[23px]">

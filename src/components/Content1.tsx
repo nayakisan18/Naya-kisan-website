@@ -4,6 +4,10 @@ export type Content1Type = {
   className?: string;
 };
 
+// Import images from the assets folder
+import clipPathGroup11 from "../assets/clip-path-group-11@2x.png";
+import clipPathGroup21 from "../assets/clip-path-group-21@2x.png";
+
 const Content1: FunctionComponent<Content1Type> = ({ className = "" }) => {
   return (
     <div
@@ -25,13 +29,13 @@ const Content1: FunctionComponent<Content1Type> = ({ className = "" }) => {
           <div className="absolute top-[321px] left-[30px] rounded-tl-131xl rounded-tr-none rounded-br-none rounded-bl-131xl bg-khaki-100 w-[540px] h-[300px] z-[1]" />
           <img
             className="absolute top-[0px] left-[218px] w-[311px] h-[607px] object-cover z-[2]"
-            alt=""
-            src="/clip-path-group-11@2x.png"
+            alt="clip path group 11"
+            src={clipPathGroup11}
           />
           <img
             className="absolute top-[33px] left-[0px] w-[247px] h-[481px] object-cover z-[3]"
-            alt=""
-            src="/clip-path-group-21@2x.png"
+            alt="clip path group 21"
+            src={clipPathGroup21}
           />
         </div>
       </div>
